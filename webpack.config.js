@@ -1,5 +1,7 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -21,7 +23,7 @@ module.exports = {
       {
         test: /\.css$/i,
         // include: path.resolve(__dirname, "src"),
-        use: ["style-loader", "css-loader", "postcss-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
     ],
   },
@@ -29,15 +31,16 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new CopyPlugin({
       patterns: [
-        { from: "src/index.html", to: "index.html" },
         {
           from: "src/assets",
           to: "assets", // copies all files to dist/assets
         },
       ],
     }),
+    new HtmlWebpackPlugin({ template: "src/index.html" }),
   ],
   output: {
     filename: "bundle.js",
