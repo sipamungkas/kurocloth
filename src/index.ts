@@ -1,13 +1,15 @@
-import Swiper, { Autoplay } from "swiper";
 import "./styles/index.css";
+import Swiper, { Autoplay } from "swiper";
 import "swiper/css";
 
 Swiper.use([Autoplay]);
 const swiper = new Swiper(".swiper", {
-  // direction: "horizontal",
   loop: true,
   autoplay: {
     delay: 5000,
   },
-  // effect: "flip",
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
 });

@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kuro Cloth</title>
   </head>
-  <body class="bg-black">
-    <nav class="relative p-4 flex flex-1 justify-between flex-row h-9 py-4">
+  <body class="bg-black font-monsterrat">
+    <nav
+      class="px-4 flex flex-1 justify-between flex-row h-9 py-8 sticky top-0 bg-black items-center z-10"
+    >
       <img
         class="h-4 sm:h-6 cursor-pointer"
         src="./assets/icons/home-icon.svg"
@@ -25,7 +27,7 @@
     </nav>
 
     <!-- Hero section -->
-    <section class="hero swiper relative mt-8">
+    <section class="hero swiper relative mt-4">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./assets/images/slider-kc-1.webp" />
@@ -36,6 +38,7 @@
         <div class="swiper-slide">
           <img src="./assets/images/slider-kc-3.webp" />
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -75,7 +78,7 @@
         >
           New Collection
         </h2>
-        <h3 class="text-white text-xl sm:mb-4 sm:text-right">THIRD</h3>
+        <h3 class="text-white text-xl mb-4 sm:text-right">THIRD</h3>
         <p class="text-white text-base text-justify sm:p-0 sm:text-right">
           Kaos desain modern 3 warna netral. Berbahan cotton combed 24s. 100%
           alami dan aman digunakan, bahannya lebih lembut, halus dan adem.
@@ -126,31 +129,40 @@
       <img src="./assets//images/details.webp" alt="cloth details" />
     </section>
     <!-- price -->
-    <section class="section-price w-full mt-8 h-full px-4">
+    <section
+      class="section-price w-full mt-8 h-full px-4 py-14 sm:h-screen sm:mx-auto align-middle sm:flex sm:flex-col sm:justify-center sm:items-center"
+    >
       <div
-        class="flex flex-row mb-12 w-full items-center justify-between px-20"
+        class="flex flex-row mb-12 w-full items-center justify-between px-20 sm:max-w-md sm:mx-auto md:max-w-xl"
       >
-        <div class="flex flex-col text-white text-center">
-          <h4 class="text-lg font-semibold">Normal Price</h4>
-          <h3 class="text-xl font-bold">120K</h3>
+        <div class="flex flex-col text-white text-center h-20">
+          <h4 class="text-lg font-semibold mb-1 md:text-3xl md:mb-5">
+            Normal Price
+          </h4>
+          <h3
+            class="text-2xl font-bold relative before:absolute before:top-1/2 before:bg-red-800 before:w-14 before:h-1 before:transform before:-rotate-12 md:text-5xl md:before:w-36 md:before:-translate-x-2"
+          >
+            120K
+          </h3>
         </div>
-        <div class="flex flex-col text-white text-center">
-          <h4 class="text-lg font-semibold">Promo</h4>
-          <h3 class="text-3xl font-bold">105K</h3>
+        <div class="flex flex-col text-white text-center h-20">
+          <h4 class="text-lg font-semibold md:text-4xl md:mb-4">Promo</h4>
+          <h3 class="text-4xl font-bold md:text-6xl">105K</h3>
         </div>
       </div>
-      <div class="flex flex-row justify-center">
-        <button
-          class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-fit flex flex-row"
-        >
-          <img src="./assets/icons/wa-icon.svg" class="h-6 w-6" />
-          <p class="ml-2">0851 5611 9394</p>
-        </button>
+      <div class="flex flex-row justify-center mt-20 h-1/2 sm:h-fit">
+        <div class="flex flex-col w-fit">
+          <h3 class="text-white text-center text-xl font-bold mb-4">Get Now</h3>
+          <button
+            class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded w-fit flex flex-row items-center justify-center"
+          >
+            <img src="./assets/icons/wa-icon.svg" class="h-6 w-6" />
+            <p class="ml-2">0851 5611 9394</p>
+          </button>
+        </div>
       </div>
     </section>
 
-    <div class="mt-8"></div>
-
-    <script src="./bundle.js" defer></script>
+    <script src="./bundle.js"></script>
   </body>
 </html>
