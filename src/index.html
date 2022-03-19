@@ -25,7 +25,7 @@
     </nav>
 
     <!-- Hero section -->
-    <div class="hero swiper relative mt-8">
+    <section class="hero swiper relative mt-8">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./assets/images/slider-kc-1.webp" />
@@ -37,12 +37,119 @@
           <img src="./assets/images/slider-kc-3.webp" />
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Image Preview -->
-    <div class="feature">
-      <div class="w-fu"></div>
-    </div>
+    <section class="feature mt-8 flex flex-col sm:flex-row">
+      <!-- Left section -->
+      <div class="relative w-full sm:my-auto sm:px-4 sm:flex sm:flex-7">
+        <img
+          class="h-60 w-full object-contain"
+          src="./assets/images/person-1.webp"
+        />
+        <div
+          class="relative w-full mt-8 sm:absolute sm:left-10 sm:top-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-fit"
+        >
+          <div
+            class="flex flex-row items-center justify-center gap-4 sm:flex-col"
+          >
+            <img
+              class="h-12 w-12 bg-white cursor-pointer"
+              src="./assets/images/person-1.webp"
+            />
+            <img
+              class="h-12 w-12 bg-white cursor-pointer"
+              src="./assets/images/person-2.webp"
+            />
+            <img
+              class="h-12 w-12 bg-white cursor-pointer object-cover"
+              src="./assets/images/feature-1.webp"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- right section -->
+      <div class="mt-8 px-4 sm:mt-4 sm:flex sm:flex-5 sm:flex-col sm:px-10">
+        <h2
+          class="text-white font-monsterrat text-center font-bold text-3xl sm:text-4xl sm:text-right sm:mb-4"
+        >
+          New Collection
+        </h2>
+        <h3 class="text-white text-xl sm:mb-4 sm:text-right">THIRD</h3>
+        <p class="text-white text-base text-justify sm:p-0 sm:text-right">
+          Kaos desain modern 3 warna netral. Berbahan cotton combed 24s. 100%
+          alami dan aman digunakan, bahannya lebih lembut, halus dan adem.
+          Permukaan kainnya lebih rata dan mampu menyerap keringat dengan baik.
+        </p>
+        <!-- thumbnail container -->
+        <div class="sm:w-fit mt-8 sm:self-end">
+          <div class="flex flex-row self-center justify-center">
+            <img
+              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
+              src="./assets/images/thumbnail-1.webp"
+              alt=""
+            />
+            <img
+              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
+              src="./assets/images/thumbnail-2.webp"
+              alt=""
+            />
+            <img
+              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
+              src="./assets/images/thumbnail-3.webp"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-row justify-center">
+            <img
+              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
+              src="./assets/images/thumbnail-4.webp"
+              alt=""
+            />
+            <img
+              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
+              src="./assets/images/thumbnail-5.webp"
+              alt=""
+            />
+            <img
+              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
+              src="./assets/images/thumbnail-6.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- details -->
+    <section class="mt-8 p-4">
+      <h2 class="text-white text-3xl font-monsterrat font-bold">Third</h2>
+      <img src="./assets//images/details.webp" alt="cloth details" />
+    </section>
+    <!-- price -->
+    <section class="section-price w-full mt-8 h-full px-4">
+      <div
+        class="flex flex-row mb-12 w-full items-center justify-between px-20"
+      >
+        <div class="flex flex-col text-white text-center">
+          <h4 class="text-lg font-semibold">Normal Price</h4>
+          <h3 class="text-xl font-bold">120K</h3>
+        </div>
+        <div class="flex flex-col text-white text-center">
+          <h4 class="text-lg font-semibold">Promo</h4>
+          <h3 class="text-3xl font-bold">105K</h3>
+        </div>
+      </div>
+      <div class="flex flex-row justify-center">
+        <button
+          class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-fit flex flex-row"
+        >
+          <img src="./assets/icons/wa-icon.svg" class="h-6 w-6" />
+          <p class="ml-2">0851 5611 9394</p>
+        </button>
+      </div>
+    </section>
+
+    <div class="mt-8"></div>
 
     <script src="./bundle.js" defer></script>
   </body>

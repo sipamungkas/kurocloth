@@ -5,6 +5,9 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
+      fontFamily: {
+        monsterrat: ["Monsterrat", "sans-serif"],
+      },
       // use this if you want to use custom color
       // colors: {
       //   transparent: "transparent",
