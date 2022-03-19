@@ -4,7 +4,8 @@
   "packageManager": "yarn@3.2.0",
   "scripts": {
     "start": "webpack serve --mode=development",
-    "build": "SET NODE_ENV=production && webpack --mode=production"
+    "build": "NODE_ENV=production && webpack --mode=production",
+    "build:windows": "SET NODE_ENV=production && webpack --mode=production"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^10.2.4",
