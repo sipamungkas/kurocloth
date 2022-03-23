@@ -28,3 +28,18 @@ const previewSwiper = new Swiper(".person", {
     el: ".swiper-pagination",
   },
 });
+
+const imageDisplay = document.querySelector(
+  ".image-display"
+)! as HTMLImageElement;
+
+const imagePersons = document.querySelectorAll(
+  ".preview-person"
+)! as NodeListOf<HTMLImageElement>;
+imagePersons.forEach((imagePerson) => {
+  imagePerson.addEventListener("click", imagePersonListener);
+});
+
+function imagePersonListener(this: HTMLImageElement, ev: Event) {
+  imageDisplay.src = this.src;
+}

@@ -47,11 +47,17 @@
     <!-- Image Preview -->
     <section class="feature mt-8 flex flex-col h-screen md:flex-row">
       <!-- Left section -->
-      <div class="relative flex flex-1 flex-col md:my-auto md:px-4 md:flex-1">
-        <img
-          class="h-60 w-full object-contain md:h-screen"
-          src="./assets/images/person-1.webp"
-        />
+      <div
+        class="relative flex flex-1 flex-col md:my-auto md:px-4 md:flex-1 lg:h-screen"
+      >
+        <div
+          class="h-60 w-full object-contain align-middle items-center overflow-hidden lg:h-screen"
+        >
+          <img
+            class="image-display w-full h-60 md:h-100 md:w-100 lg:h-screen md:w-auto object-contain"
+            src="./assets/images/person-1.webp"
+          />
+        </div>
         <div
           class="relative w-full mt-8 md:absolute md:left-10 md:top-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:w-fit lg:left-24"
         >
@@ -59,16 +65,16 @@
             class="flex flex-row items-center justify-center gap-4 md:flex-col"
           >
             <img
-              class="h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview"
+              class="preview-person h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview"
               src="./assets/images/person-1.webp"
             />
             <img
-              class="h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview"
+              class="preview-person h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview"
               src="./assets/images/person-2.webp"
             />
             <img
-              class="h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview"
-              src="./assets/images/feature-1.webp"
+              class="preview-person h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview"
+              src="./assets/images/Person-3.webp"
             />
           </div>
         </div>
@@ -135,8 +141,18 @@
     </section>
     <!-- details -->
     <section class="mt-8 p-4 md:mt-20 lg:mt-24 xl:mt-32">
-      <h1 class="text-white text-3xl font-monsterrat font-bold md:text-4xl lg:text-5xl xl:text-6xl">Third</h1>
-      <img src="./assets//images/features.webp" alt="cloth details" />
+      <h1
+        class="text-white text-3xl font-monsterrat font-bold md:text-4xl lg:text-5xl xl:text-6xl"
+      >
+        Third
+      </h1>
+      <div class="flex flex-row justify-end">
+        <img
+          class="w-full lg:w-11/12 object-contain"
+          src="./assets//images/features-2.webp"
+          alt="cloth details"
+        />
+      </div>
     </section>
     <!-- price -->
     <section
@@ -165,6 +181,7 @@
           <h3 class="text-white text-center text-xl font-bold mb-4">Get Now</h3>
           <button
             class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded w-fit flex flex-row items-center justify-center"
+            id="whatsapp"
           >
             <img src="./assets/icons/wa-icon.svg" class="h-6 w-6" />
             <p class="ml-2">0851 5611 9394</p>
