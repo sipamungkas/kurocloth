@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         monsterrat: ["Monsterrat", "sans-serif"],
+        hansonbold: ["HansonBold", "sans-serif"],
       },
       // use this if you want to use custom color
       // colors: {

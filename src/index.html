@@ -5,6 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kuro Cloth</title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "971408173491293");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=971408173491293&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body class="bg-black font-monsterrat">
     <nav
@@ -47,11 +83,17 @@
     <!-- Image Preview -->
     <section class="feature mt-8 flex flex-col h-screen md:flex-row">
       <!-- Left section -->
-      <div class="relative flex flex-1 flex-col md:my-auto md:px-4 md:flex-1">
-        <img
-          class="h-60 w-full object-contain md:h-screen"
-          src="./assets/images/person-1.webp"
-        />
+      <div
+        class="relative flex flex-1 flex-col md:my-auto md:px-4 md:flex-1 lg:h-screen"
+      >
+        <div
+          class="h-60 w-full object-contain align-middle items-center overflow-hidden lg:h-screen"
+        >
+          <img
+            class="image-display w-full h-60 md:h-100 md:w-100 lg:h-screen md:w-auto object-contain"
+            src="./assets/images/person-1.webp"
+          />
+        </div>
         <div
           class="relative w-full mt-8 md:absolute md:left-10 md:top-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:w-fit lg:left-24"
         >
@@ -59,34 +101,35 @@
             class="flex flex-row items-center justify-center gap-4 md:flex-col"
           >
             <img
-              class="h-12 w-12 bg-white cursor-pointer object-cover person-preview"
+              class="preview-person h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview"
               src="./assets/images/person-1.webp"
             />
             <img
-              class="h-12 w-12 bg-white cursor-pointer object-cover person-preview"
+              class="preview-person h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview"
               src="./assets/images/person-2.webp"
             />
             <img
-              class="h-12 w-12 bg-white cursor-pointer object-cover person-preview"
-              src="./assets/images/feature-1.webp"
+              class="preview-person h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview"
+              src="./assets/images/Person-3.webp"
             />
           </div>
         </div>
       </div>
       <!-- right section -->
       <div
-        class="mt-8 px-4 flex flex-1 flex-col lg:mt-4 lg:flex lg:flex-1 lg:flex-col lg:pr-10 lg:pt-24"
+        class="mt-8 px-4 flex flex-1 flex-col md:pt-20 lg:mt-4 lg:flex lg:flex-1 lg:flex-col lg:pr-10 lg:py-36"
       >
-        <h2
-          class="mb-4 text-white font-monsterrat text-center font-bold text-3xl md:text-4xl md:text-right md:mb-6 lg:text-6xl lg:mb-10 xl:mb-18"
+        <h1
+          class="mb-4 text-white font-monsterrat text-center font-bold text-3xl md:text-4xl md:text-right md:mb-6 lg:text-5xl xl:text-7xl xl:mb-10 xl:mb-18"
         >
           New Collection
-        </h2>
-        <h3
-          class="mb-3 text-white text-xl md:mb-4 md:text-right lg:text4xl xl:mb-18"
+        </h1>
+        <h2
+          class="mb-3 text-white text-xl font-bold font-hansonbold md:mb-4 md:text-right lg:text-5xl xl:text-6xl xl:mb-18"
         >
           THIRD
-        </h3>
+        </h2>
+
         <p
           class="text-white text-base text-justify md:p-0 md:text-right lg:mb-10 lg:text-lg"
         >
@@ -98,45 +141,55 @@
         <div class="md:w-fit mt-8 md:self-end">
           <div class="flex flex-row self-center justify-center">
             <img
-              class="object-cover h-auto w-1/4 md:w-20 md:h-16 m-2"
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2"
               src="./assets/images/thumbnail-1.webp"
-              alt=""
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
             <img
-              class="object-cover h-auto w-1/4 md:w-20 md:h-16 m-2"
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2"
               src="./assets/images/thumbnail-2.webp"
-              alt=""
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
             <img
-              class="object-cover h-auto w-1/4 md:w-20 md:h-16 m-2"
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2"
               src="./assets/images/thumbnail-3.webp"
-              alt=""
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
           </div>
           <div class="flex flex-row justify-center">
             <img
-              class="object-cover h-auto w-1/4 md:w-20 md:h-16 m-2"
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2"
               src="./assets/images/thumbnail-4.webp"
-              alt=""
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
             <img
-              class="object-cover h-auto w-1/4 md:w-20 md:h-16 m-2"
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2"
               src="./assets/images/thumbnail-5.webp"
-              alt=""
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
             <img
-              class="object-cover h-auto w-1/4 md:w-20 md:h-16 m-2"
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2"
               src="./assets/images/thumbnail-6.webp"
-              alt=""
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
           </div>
         </div>
       </div>
     </section>
     <!-- details -->
-    <section class="mt-8 p-4">
-      <h2 class="text-white text-3xl font-monsterrat font-bold">Third</h2>
-      <img src="./assets//images/details.webp" alt="cloth details" />
+    <section class="mt-8 p-4 md:mt-20 lg:mt-24 xl:mt-32">
+      <h1
+        class="text-white text-3xl font-hansonbold font-bold md:text-4xl lg:text-5xl xl:text-6xl"
+      >
+        THIRD
+      </h1>
+      <div class="flex flex-row justify-end">
+        <img
+          class="w-full lg:w-11/12 object-contain"
+          src="./assets//images/features-2.webp"
+          alt="cloth details"
+        />
+      </div>
     </section>
     <!-- price -->
     <section
@@ -165,6 +218,7 @@
           <h3 class="text-white text-center text-xl font-bold mb-4">Get Now</h3>
           <button
             class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded w-fit flex flex-row items-center justify-center"
+            id="wa-button"
           >
             <img src="./assets/icons/wa-icon.svg" class="h-6 w-6" />
             <p class="ml-2">0851 5611 9394</p>
