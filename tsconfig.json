@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
@@ -7,7 +8,9 @@
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/**/*.spec.ts"],
+  "include": ["src/**/*"]
 }

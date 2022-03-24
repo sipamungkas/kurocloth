@@ -4,153 +4,228 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kuro Cloth</title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "971408173491293");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=971408173491293&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
-  <body class="bg-black">
-    <nav class="relative p-4 flex flex-1 justify-between flex-row h-9 py-4">
+  <body class="bg-black font-monsterrat">
+    <nav
+      class="px-4 flex flex-1 justify-between flex-row h-9 py-8 sticky top-0 bg-black items-center z-10"
+    >
       <img
-        class="h-4 sm:h-6 cursor-pointer"
+        class="h-4 md:h-6 cursor-pointer"
         src="./assets/icons/home-icon.svg"
       />
       <div class="flex space-x-8">
         <img
-          class="h-4 sm:h-6 cursor-pointer"
+          class="h-4 md:h-6 cursor-pointer"
           src="./assets/icons/search-icon.svg"
         />
         <img
-          class="h-4 sm:h-6 cursor-pointer"
+          class="h-4 md:h-6 cursor-pointer"
           src="./assets/icons/hamburger-icon.svg"
         />
       </div>
     </nav>
 
     <!-- Hero section -->
-    <section class="hero swiper relative mt-8">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./assets/images/slider-kc-1.webp" />
+    <section class="relative mt-4">
+      <div class="hero swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/slider-kc-1.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slider-kc-2.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slider-kc-3.webp" />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="./assets/images/slider-kc-2.webp" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./assets/images/slider-kc-3.webp" />
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
     <!-- Image Preview -->
-    <section class="feature mt-8 flex flex-col sm:flex-row">
+    <section class="feature mt-8 flex flex-col h-screen md:flex-row">
       <!-- Left section -->
-      <div class="relative w-full sm:my-auto sm:px-4 sm:flex sm:flex-7">
-        <img
-          class="h-60 w-full object-contain"
-          src="./assets/images/person-1.webp"
-        />
+      <div
+        class="relative flex flex-1 flex-col md:my-auto md:px-4 md:flex-1 lg:h-screen"
+      >
         <div
-          class="relative w-full mt-8 sm:absolute sm:left-10 sm:top-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-fit"
+          class="h-60 w-full object-contain align-middle items-center overflow-hidden lg:h-screen"
+        >
+          <img
+            class="image-display w-full h-60 md:h-100 md:w-100 lg:h-screen md:w-auto object-contain lozad"
+            data-src="./assets/images/person-1.webp"
+          />
+        </div>
+        <div
+          class="relative w-full mt-8 md:absolute md:left-10 md:top-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:w-fit lg:left-24"
         >
           <div
-            class="flex flex-row items-center justify-center gap-4 sm:flex-col"
+            class="flex flex-row items-center justify-center gap-4 md:flex-col"
           >
             <img
-              class="h-12 w-12 bg-white cursor-pointer"
-              src="./assets/images/person-1.webp"
+              class="preview-person h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview lozad"
+              data-src="./assets/images/person-1.webp"
             />
             <img
-              class="h-12 w-12 bg-white cursor-pointer"
-              src="./assets/images/person-2.webp"
+              class="preview-person h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview lozad"
+              data-src="./assets/images/person-2.webp"
             />
             <img
-              class="h-12 w-12 bg-white cursor-pointer object-cover"
-              src="./assets/images/feature-1.webp"
+              class="preview-person h-12 w-12 md:h-18 md:w-18 lg:w-24 lg:h-24 bg-white cursor-pointer object-cover person-preview lozad"
+              data-src="./assets/images/Person-3.webp"
             />
           </div>
         </div>
       </div>
       <!-- right section -->
-      <div class="mt-8 px-4 sm:mt-4 sm:flex sm:flex-5 sm:flex-col sm:px-10">
-        <h2
-          class="text-white font-monsterrat text-center font-bold text-3xl sm:text-4xl sm:text-right sm:mb-4"
+      <div
+        class="mt-8 px-4 flex flex-1 flex-col md:pt-20 lg:mt-4 lg:flex lg:flex-1 lg:flex-col lg:pr-10 lg:py-36"
+      >
+        <h1
+          class="mb-4 text-white font-monsterrat text-center font-bold text-3xl md:text-4xl md:text-right md:mb-6 lg:text-5xl xl:text-7xl xl:mb-10 xl:mb-18"
         >
           New Collection
+        </h1>
+        <h2
+          class="mb-3 text-white text-xl font-bold font-hansonbold md:mb-4 md:text-right lg:text-5xl xl:text-6xl xl:mb-18"
+        >
+          THIRD
         </h2>
-        <h3 class="text-white text-xl sm:mb-4 sm:text-right">THIRD</h3>
-        <p class="text-white text-base text-justify sm:p-0 sm:text-right">
+
+        <p
+          class="text-white text-base text-justify md:p-0 md:text-right lg:mb-10 lg:text-lg"
+        >
           Kaos desain modern 3 warna netral. Berbahan cotton combed 24s. 100%
           alami dan aman digunakan, bahannya lebih lembut, halus dan adem.
           Permukaan kainnya lebih rata dan mampu menyerap keringat dengan baik.
         </p>
         <!-- thumbnail container -->
-        <div class="sm:w-fit mt-8 sm:self-end">
+        <div class="md:w-fit mt-8 md:self-end">
           <div class="flex flex-row self-center justify-center">
             <img
-              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
-              src="./assets/images/thumbnail-1.webp"
-              alt=""
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2 lozad"
+              data-src="./assets/images/thumbnail-1.webp"
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
             <img
-              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
-              src="./assets/images/thumbnail-2.webp"
-              alt=""
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2 lozad"
+              data-src="./assets/images/thumbnail-2.webp"
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
             <img
-              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
-              src="./assets/images/thumbnail-3.webp"
-              alt=""
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2 lozad"
+              data-src="./assets/images/thumbnail-3.webp"
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
           </div>
           <div class="flex flex-row justify-center">
             <img
-              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
-              src="./assets/images/thumbnail-4.webp"
-              alt=""
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2 lozad"
+              data-src="./assets/images/thumbnail-4.webp"
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
             <img
-              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
-              src="./assets/images/thumbnail-5.webp"
-              alt=""
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2 lozad"
+              data-src="./assets/images/thumbnail-5.webp"
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
             <img
-              class="object-cover h-auto w-1/4 sm:w-20 sm:h-16 m-2"
-              src="./assets/images/thumbnail-6.webp"
-              alt=""
+              class="object-cover h-auto w-1/4 md:w-20 md:h-16 lg:w-24 lg:h-20 xl:w-32 xl:h-28 m-2 lozad"
+              data-src="./assets/images/thumbnail-6.webp"
+              alt="Gambar Kaos New Collection Third Kurocloth"
             />
           </div>
         </div>
       </div>
     </section>
     <!-- details -->
-    <section class="mt-8 p-4">
-      <h2 class="text-white text-3xl font-monsterrat font-bold">Third</h2>
-      <img src="./assets//images/details.webp" alt="cloth details" />
+    <section class="mt-8 p-4 md:mt-20 lg:mt-24 xl:mt-32 h-96 lg:h-full">
+      <h1
+        class="text-white text-3xl font-hansonbold font-bold md:text-4xl lg:text-5xl xl:text-6xl"
+      >
+        THIRD
+      </h1>
+      <div class="flex flex-row justify-end">
+        <img
+          class="w-full lg:w-11/12 object-contain lozad"
+          data-src="./assets//images/features-2.webp"
+          alt="cloth details"
+        />
+      </div>
     </section>
     <!-- price -->
-    <section class="section-price w-full mt-8 h-full px-4">
+
+    <section
+      class="section-price w-full mt-8 h-full px-4 py-14 md:h-screen md:mx-auto align-middle md:flex md:flex-col md:justify-center md:items-center"
+    >
       <div
-        class="flex flex-row mb-12 w-full items-center justify-between px-20"
+        class="flex flex-row mb-12 w-full items-center justify-between px-20 md:max-w-md md:mx-auto lg:max-w-xl"
       >
-        <div class="flex flex-col text-white text-center">
-          <h4 class="text-lg font-semibold">Normal Price</h4>
-          <h3 class="text-xl font-bold">120K</h3>
+        <div class="flex flex-col text-white text-center h-20">
+          <h4 class="text-lg font-semibold mb-1 lg:text-3xl lg:mb-5">
+            Normal Price
+          </h4>
+          <h3
+            class="text-2xl font-bold relative before:absolute before:top-1/2 before:bg-red-800 before:w-14 before:h-1 before:transform before:-rotate-12 lg:text-5xl lg:before:w-36 lg:before:-translate-x-2"
+          >
+            120K
+          </h3>
         </div>
-        <div class="flex flex-col text-white text-center">
-          <h4 class="text-lg font-semibold">Promo</h4>
-          <h3 class="text-3xl font-bold">105K</h3>
+        <div class="flex flex-col text-white text-center h-20">
+          <h4 class="text-lg font-semibold lg:text-4xl lg:mb-4">Promo</h4>
+          <h3 class="text-4xl font-bold lg:text-6xl">105K</h3>
         </div>
       </div>
-      <div class="flex flex-row justify-center">
-        <button
-          class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-fit flex flex-row"
-        >
-          <img src="./assets/icons/wa-icon.svg" class="h-6 w-6" />
-          <p class="ml-2">0851 5611 9394</p>
-        </button>
+      <div class="flex flex-row justify-center mt-20 h-1/2 md:h-fit">
+        <div class="flex flex-col w-fit">
+          <h3 class="text-white text-center text-xl font-bold mb-4">Get Now</h3>
+          <button
+            class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded w-fit flex flex-row items-center justify-center"
+            id="wa-button"
+          >
+            <img src="./assets/icons/wa-icon.svg" class="h-6 w-6" />
+            <p class="ml-2">0851 5611 9394</p>
+          </button>
+        </div>
       </div>
     </section>
-
-    <div class="mt-8"></div>
-
-    <script src="./bundle.js" defer></script>
   </body>
 </html>

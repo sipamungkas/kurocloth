@@ -1,12 +1,11 @@
 module.exports = {
   jit: true,
-  purge: ["./src/**/*.html", "./src/**/*.{js,jsx,ts,tsx}"],
-  content: [],
-  darkMode: false,
+  content: ["./src/**/*.{html,js,ts}"],
   theme: {
     extend: {
       fontFamily: {
         monsterrat: ["Monsterrat", "sans-serif"],
+        hansonbold: ["HansonBold", "sans-serif"],
       },
       // use this if you want to use custom color
       // colors: {
