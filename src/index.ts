@@ -58,5 +58,12 @@ function sendWAMessage(this: Element, ev: Event) {
   );
 }
 
-const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+const observer = lozad(".lozad", {
+  enableAutoReload: true,
+  threshold: 0.1,
+  loaded: function (el) {
+    // Custom implementation on a loaded element
+    el.classList.add("loaded");
+  },
+}); // lazy loads elements with default selector as '.lozad'
 observer.observe();

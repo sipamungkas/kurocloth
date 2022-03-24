@@ -63,17 +63,17 @@
     </nav>
 
     <!-- Hero section -->
-    <section class="relative mt-4">
+    <section class="relative mt-4 min-h-fit max-h-full lg:h-full">
       <div class="hero swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./assets/images/slider-kc-1.webp" />
           </div>
           <div class="swiper-slide">
-            <img src="./assets/images/slider-kc-2.webp" />
+            <img data-src="./assets/images/slider-kc-2.webp" class="lozad" />
           </div>
           <div class="swiper-slide">
-            <img src="./assets/images/slider-kc-3.webp" />
+            <img data-src="./assets/images/slider-kc-3.webp" class="lozad" />
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -177,7 +177,9 @@
       </div>
     </section>
     <!-- details -->
-    <section class="mt-8 p-4 md:mt-20 lg:mt-24 xl:mt-32 h-96 lg:h-full">
+    <section
+      class="my-8 p-4 md:my-20 lg:my-24 h-72 sm:h-72 md:h-auto lg:h-full"
+    >
       <h1
         class="text-white text-3xl font-hansonbold font-bold md:text-4xl lg:text-5xl xl:text-6xl"
       >
