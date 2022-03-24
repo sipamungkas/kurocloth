@@ -33,11 +33,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@types/lozad", "npm:1.16.1"],\
+            ["@types/node", "npm:17.0.23"],\
             ["autoprefixer", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:10.4.4"],\
             ["copy-webpack-plugin", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:10.2.4"],\
             ["css-loader", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:6.7.1"],\
             ["cssnano", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:5.1.4"],\
             ["html-webpack-plugin", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:5.5.0"],\
+            ["lozad", "npm:1.16.0"],\
             ["mini-css-extract-plugin", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:2.6.0"],\
             ["postcss", "npm:8.4.12"],\
             ["postcss-import", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:14.0.2"],\
@@ -490,6 +493,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/lozad", [\
+        ["npm:1.16.1", {\
+          "packageLocation": "./.yarn/cache/@types-lozad-npm-1.16.1-a7b53456a6-6cf6eef575.zip/node_modules/@types/lozad/",\
+          "packageDependencies": [\
+            ["@types/lozad", "npm:1.16.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/mime", [\
         ["npm:1.3.2", {\
           "packageLocation": "./.yarn/cache/@types-mime-npm-1.3.2-ea71878ab3-0493368244.zip/node_modules/@types/mime/",\
@@ -504,6 +516,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-17.0.21-7d68eb6a13-89dcd2fe82.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:17.0.21"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:17.0.23", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-17.0.23-167849e796-a351755473.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:17.0.23"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4650,11 +4669,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["kurocloth", "workspace:."],\
+            ["@types/lozad", "npm:1.16.1"],\
+            ["@types/node", "npm:17.0.23"],\
             ["autoprefixer", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:10.4.4"],\
             ["copy-webpack-plugin", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:10.2.4"],\
             ["css-loader", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:6.7.1"],\
             ["cssnano", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:5.1.4"],\
             ["html-webpack-plugin", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:5.5.0"],\
+            ["lozad", "npm:1.16.0"],\
             ["mini-css-extract-plugin", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:2.6.0"],\
             ["postcss", "npm:8.4.12"],\
             ["postcss-import", "virtual:1b7d0811f8031f7ecbfd77b8058c13326e19793741e254d6ed3fc0ed161ed59784f734a4474d65b29ab1397464433ece3317f570327b674549fa7a5cba0d1efb#npm:14.0.2"],\
@@ -4775,6 +4797,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["lower-case", "npm:2.0.2"],\
             ["tslib", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lozad", [\
+        ["npm:1.16.0", {\
+          "packageLocation": "./.yarn/cache/lozad-npm-1.16.0-46984d8adc-a6b5146a86.zip/node_modules/lozad/",\
+          "packageDependencies": [\
+            ["lozad", "npm:1.16.0"]\
           ],\
           "linkType": "HARD"\
         }]\

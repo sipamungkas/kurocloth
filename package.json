@@ -2,12 +2,16 @@
   "name": "kurocloth",
   "version": "1.0.0",
   "packageManager": "yarn@3.2.0",
+  "main": "src/index.ts",
+  "typings": "src/index.ts",
   "scripts": {
     "start": "webpack serve --mode=development",
     "build": "NODE_ENV=production && webpack --mode=production",
     "build:windows": "SET NODE_ENV=production && webpack --mode=production"
   },
   "devDependencies": {
+    "@types/lozad": "^1.16.1",
+    "@types/node": "^17.0.23",
     "autoprefixer": "^10.4.4",
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
@@ -29,6 +33,7 @@
     "webpack-devserver": "^0.0.6"
   },
   "dependencies": {
+    "lozad": "^1.16.0",
     "swiper": "^8.0.7"
   }
 }

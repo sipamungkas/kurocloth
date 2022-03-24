@@ -1,4 +1,5 @@
 import "./styles/index.css";
+import * as lozad from "lozad";
 import Swiper, { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -56,3 +57,6 @@ function sendWAMessage(this: Element, ev: Event) {
     `https://api.whatsapp.com/send?phone=${number}&text=${encodedMessage}`
   );
 }
+
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
